@@ -1,0 +1,105 @@
+﻿body 
+{
+  background-color: black; 
+  /*Browsers will sometimes apply their default margin, just incase
+  we don't want spacing we set everything to 0*/
+  margin: 0; /*Margin = space outside of the content's box border/things*/
+  padding: 0; /*Padding = space inside btwn border/content (increases box dimension)*/
+}
+
+.header 
+{
+  background-color: rgba(55,58,54,0.9); /*Alpha=Transparency btwn [0,1]*/
+  z-index: 100; /*Top layer*/
+  position: fixed; /*Fixed location even when scrolling*/
+  left: 0; /*Sets positioning to 0 at top left*/ 
+  top: 0;
+  text-align: center; /*Position of font in element*/
+
+  width: 100%; /*Makes sure element takes up 100% of the box it's in*/
+  overflow-y: auto; /*Box containing content - if content larger will add a scroll bar*/
+} /*Element containing header text*/
+
+.headerText 
+{
+	color: rgb(255,215,0);
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 40px;
+} /* <div id="headerText> */
+
+.bannerBackground
+{
+	height: 600px; /*Height of the banner box*/
+	position: relative; /*Using with top,left, etc. Moving element from its "actual position"*/
+	top: -55px;
+	width: 100%; /*Takes up 100% of containing box*/
+	background: url("ryo.jpg");
+	background-size: cover; /*Image covers entire w/h of box*/
+	background-attachment: fixed; /*Stays in same location when scrolled (looks like we're going down on the image*/
+} /*Banner Image*/
+
+.bannerText
+{
+	margin: 0 auto; /*Center the box container of the text, top/bottom=0 while left/right = auto*/
+	position: relative; /*Moving the text down to the middle of the banner image*/
+	top: 250px;
+	text-align: center; /*Text style centered*/
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 26px;
+} /*Text Content within the banner*/
+
+.contentContainer
+{
+	background: rgb(45, 45, 45);
+	box-sizing: border-box; /*h/w of content inside box remain fixed even if content attributes changes it*/
+	width: 90%;
+	margin: 0 auto; /*Center the container top/bottom=0, left/right=center auto*/ 
+} /*Background for the content (the container for it)*/
+
+.subtitleText
+{
+	border-bottom: 1px solid rgb(216, 195, 153);
+	border-top: 1px solid rgb(216, 195, 153);
+	color: rgb(216, 195, 153);
+	font-family: 'Cabin Sketch', cursive;
+	text-align: center; /*Centering text in the middle of the box*/
+	margin-right: auto; /*Centering box*/
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 20px; /*Space from bottom of box with other elements*/
+	padding-top: 10px; /*Inside space between box border and text*/
+	padding-bottom: 10px; 
+	width: 50%; /*Making box smaller*/
+} /*h4 By Tofufu Text*/
+
+.contentText
+{
+	color: rgb(196, 196, 196);
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	font-size: 25px;
+	
+} /*Actual text inside content*/
+
+#images
+{
+	border: 1px solid rgb(255,215,0); 
+	width: 75%;
+	height: 75%;
+} /*Images in Content*/
+
+.luffyQuote
+{
+	color: rgb(255,215,0);
+	font-size: 30px;
+	font-family: 'Cabin Sketch', cursive;
+}/*Quote in content*/
+
+.orangeText
+{
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 35px;
+	color: rgb(255, 169, 22);
+	text-align: center;
+	padding: 10px;
+} /*orangeText=Content Header and Ending Text*/
